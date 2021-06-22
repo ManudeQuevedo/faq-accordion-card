@@ -9,6 +9,8 @@
 :root {
    --soft-violet: hsl(273, 75%, 66%);
    --soft-blue: hsl(240, 73%, 65%);
+   --soft-red: hsl(14, 88%, 65%);
+   --light-grayish-blue: hsl(240, 5%, 91%);
 }
 
 * {
@@ -30,9 +32,38 @@ body {
 .container {
    align-items: center;
    display: flex;
+   height: 100vh;
    justify-content: center;
 }
 
+/*===================== 
+      Card Styles
+=====================*/
+.card {
+   background-color: #fff;
+   border-radius: 10px;
+   display: flex;
+   max-width: 920px;
+   overflow: hidden;
+   padding: 2em;
+   width: 100%;
+}
+
+.image {
+   background: url(/images/illustration-woman-online-mobile.svg);
+   background-repeat: no-repeat;
+   background-position: 120% center;
+   height: 100%;
+   width: 100%;
+}
+
+.card-content {
+   border-bottom: 1px solid var(--light-grayish-blue);
+}
+
+/*===================== 
+    Footer Styles
+=====================*/
 .attribution {
    font-size: 11px;
    text-align: center;
