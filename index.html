@@ -14,56 +14,66 @@
 
       <title>Frontend Mentor | FAQ Accordion Card</title>
 
-      <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-      <style>
-         .attribution {
-            font-size: 11px;
-            text-align: center;
-         }
-         .attribution a {
-            color: hsl(228, 45%, 44%);
-         }
-      </style>
+      <link rel="stylesheet" href="style.css" />
    </head>
    <body>
-      <section class="card">
-         <article>
-            <h3>How many team members can I invite?</h3>
-            <p>
-               You can invite up to 2 additional users on the Free plan. There
-               is no limit on team members for the Premium plan.
-            </p>
-         </article>
-         <article>
-            <h3>What is the maximum file upload size?</h3>
-            <p>
-               No more than 2GB. All files in your account must fit your
-               allotted storage space.
-            </p>
-         </article>
-         <article>
-            <h3>How do I reset my password?</h3>
-            <p>
-               Click “Forgot password” from the login page or “Change password”
-               from your profile page. A reset link will be emailed to you.
-            </p>
-         </article>
-         <article>
-            <h3>Can I cancel my subscription?</h3>
-            <p>
-               Yes! Send us a message and we’ll process your request no
-               questions asked.
-            </p>
-         </article>
-         <article>
-            <h3>Do you provide additional support?</h3>
-            <p>
-               Chat and email support is available 24/7. Phone lines are open
-               during normal business hours.
-            </p>
-         </article>
+      <section class="container">
+         <section class="card">
+            <picture>
+               <source
+                  srcset="./images/illustration-woman-online-desktop.svg"
+                  media="(min-width: 768px)"
+               />
+               <img
+                  src="./images/illustration-woman-online-mobile.svg"
+                  alt="Main image"
+               />
+            </picture>
+            <picture>
+               <source
+                  srcset="./images/bg-pattern-desktop.svg"
+                  media="(min-width: 768px)"
+               />
+               <img src="./images/bg-pattern-mobile.svg" alt="Pattern image" />
+            </picture>
+            <article class="card-content">
+               <p class="card-title">How many team members can I invite?</p>
+               <p class="card-text">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+               </p>
+            </article>
+            <article class="card-content">
+               <p class="card-title">What is the maximum file upload size?</p>
+               <p class="card-text">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+               </p>
+            </article>
+            <article class="card-content">
+               <p class="card-title">How do I reset my password?</p>
+               <p class="card-text">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+               </p>
+            </article>
+            <article class="card-content">
+               <p class="card-title">Can I cancel my subscription?</p>
+               <p class="card-text">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+               </p>
+            </article>
+            <article class="card-content">
+               <p class="card-title">Do you provide additional support?</p>
+               <p class="card-text">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+               </p>
+            </article>
+         </section>
       </section>
-
       <div class="attribution">
          Challenge by
          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
