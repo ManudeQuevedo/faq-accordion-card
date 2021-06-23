@@ -7,51 +7,48 @@
     Default Styles
 =====================*/
 :root {
-   --soft-violet: hsl(273, 75%, 66%);
-   --soft-blue: hsl(240, 73%, 65%);
-   --soft-red: hsl(14, 88%, 65%);
+   --bg-violet: hsl(273, 75%, 66%);
+   --bg-blue: hsl(240, 73%, 65%);
+   --bg-white: hsl(360, 100%, 100%)
+   --text-grayish-blue: hsl(237, 12%, 33%);
+   --text-dark-blue: hsl(240, 6%, 50%);
+   --text-very-dark-blue: blue: hsl(238, 29%, 16%);
+   --text-soft-red: hsl(14, 88%, 65%);
+   --divider: hsl(240, 5%, 91%);
    --light-grayish-blue: hsl(240, 5%, 91%);
 }
+*,
 
-* {
+*::before,
+*::after {
    box-sizing: border-box;
 }
 
-* body {
-   background-image: linear-gradient(
-      to bottom,
-      var(--soft-violet),
-      var(--soft-blue)
-   );
+body {
+   background-image: linear-gradient(var(--bg-violet), var(--bg-blue));
    font-family: 'Kumbh Sans', sans-serif;
    font-size: 12px;
    min-height: 100vh;
+   padding: 3em
 }
 
 /*===================== 
       Card Styles
 =====================*/
 .card {
-   background-color: #fff;
-   border-radius: 10px;
-   display: flex;
-   max-width: 920px;
-   overflow: hidden;
-   padding: 2em;
+   background: #fff;
+   border-radius: 2em;
+   max-width: 56rem;
+   margin: 3rem;
+}
+
+.card__image img {
+   height: auto;
+   max-width: 25rem;
    width: 100%;
 }
 
-.image {
-   background: url(/images/illustration-woman-online-mobile.svg);
-   background-repeat: no-repeat;
-   background-position: 120% center;
-   height: 100%;
-   width: 100%;
-}
-
-.card-content {
-   border-bottom: 1px solid var(--light-grayish-blue);
-}
+.card__text {}
 
 /*===================== 
     Footer Styles
@@ -62,4 +59,18 @@
 }
 .attribution a {
    color: hsl(228, 45%, 44%);
+}
+
+/*===================== 
+   Responsive Styles
+=====================*/
+@media screen and (min-width: 62.5em) {
+   .card {
+      display: flex;
+      margin: 6rem auto;
+   }
+
+   .card__image, .card__text {
+      flex: 1;
+   }
 }
